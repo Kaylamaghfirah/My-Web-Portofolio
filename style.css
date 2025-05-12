@@ -38,6 +38,13 @@ nav {
     width: auto;
 }
 
+.logo-text {
+    font-family: 'Rufina', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #13A099;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -915,5 +922,780 @@ nav {
     
     .contact h2 {
         font-size: 2.5rem;
+    }
+}
+/* About Page Styles */
+.about-page {
+    background-color: #2C4140;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+.about-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.about-page-content {
+    flex: 1;
+}
+
+.about-page-content p {
+    color: var(--white-color);
+    font-family: 'Sen', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-page-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-page-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* Responsive Design untuk About Page */
+@media (max-width: 968px) {
+    .about-page-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .about-page-image img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-page-content p {
+        font-size: 1rem;
+    }
+
+    .about-page-image img {
+        max-width: 250px;
+    }
+}
+
+/* Academic Section */
+.academic-section {
+    background-color: #2C4140;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 5%;
+}
+
+.academic-container {
+    max-width: 800px;
+    width: 100%;
+}
+
+.academic-title {
+    font-family: 'Sen', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.academic-title .highlight {
+    color: #13A099;
+}
+
+.education-container {
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.education-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.education-header img {
+    width: 40px;
+    height: 40px;
+}
+
+.education-header h3 {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.5rem;
+    color: #2C4140;
+    font-weight: 600;
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-item {
+    padding-left: 1.5rem;
+    border-left: 2px solid #13A099;
+}
+
+.timeline-item .year {
+    font-family: 'Sen', sans-serif;
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.timeline-item h4 {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.1rem;
+    color: #2C4140;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.timeline-item p {
+    font-family: 'Sen', sans-serif;
+    font-size: 0.9rem;
+    color: #13A099;
+}
+
+/* Responsive Design untuk Academic Section */
+@media (max-width: 768px) {
+    .academic-title {
+        font-size: 2rem;
+    }
+    
+    .education-container {
+        padding: 1.5rem;
+    }
+    
+    .timeline-item h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .education-container {
+        padding: 1rem;
+    }
+    
+    .education-header h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Learning Process Section */
+.learning-section {
+    background-color: #2C4140;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 5%;
+}
+
+.learning-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.learning-title {
+    font-family: 'Sen', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.learning-title .highlight {
+    color: #13A099;
+}
+
+.learning-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.learning-card {
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 2rem;
+    flex: 1;
+    min-width: 300px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon-number {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2C4140;
+}
+
+.card-header img {
+    width: 30px;
+    height: 30px;
+}
+
+.card-header h3 {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.3rem;
+    color: #2C4140;
+    font-weight: 600;
+}
+
+.learning-card p {
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Responsive Design untuk Learning Section */
+@media (max-width: 992px) {
+    .learning-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .learning-card {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .learning-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .learning-card {
+        padding: 1.5rem;
+    }
+    
+    .card-header h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Projects Section */
+.projects {
+    padding: 5rem 5%;  /* Menambahkan padding yang sama dengan section lain */
+    background-color: var(--background-color);
+}
+
+.projects h2 {
+    font-family: 'Sen', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin-bottom: 4rem;
+    text-align: center; 
+}
+
+.projects-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 5%;  /* Menambahkan padding internal */
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;  /* Memperbesar jarak antar card */
+}
+
+.project-card {
+    flex: 0 1 450px;  /* Memperbesar ukuran card */
+    height: 280px;    /* Memperbesar tinggi card */
+    background-color: var(--white-color);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 6px solid #2C4140;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, 
+        rgba(51, 75, 53, 0.85), 
+        rgba(237, 242, 242, 0.85)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-overlay h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    line-height: 1;  /* Ini mengatur jarak antar baris untuk judul */
+    width: 100%;
+}
+
+.project-overlay p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 1 rem;  /* Mengubah dari auto ke nilai tetap */
+    width: 100%;
+}
+
+.project-icon {
+    width: 25px;  /* Mengubah ukuran menjadi lebih besar dan sama */
+    height: 25px; /* Mengubah ukuran menjadi lebih besar dan sama */
+    background-color: #2C4140;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 12px;  /* Menambah padding untuk memastikan icon tetap proporsional */
+}
+
+.project-icon i {
+    color: var(--white-color);  /* Mengubah warna icon menjadi putih agar kontras */
+    font-size: 1.2rem;
+}
+
+.project-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design untuk Projects Section */
+@media (max-width: 968px) {
+    .projects {
+        padding: 3rem 5%;  /* Menyesuaikan padding di layar kecil */
+    }
+    
+    .projects h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-card {
+        flex: 0 1 400px;  /* Menyesuaikan ukuran card di layar kecil */
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;  /* Mengubah layout menjadi vertikal di mobile */
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;  /* Card mengambil lebar penuh di mobile */
+        max-width: 500px;
+    }
+}
+
+
+/* Pengaturan khusus untuk kotak pertama (Digital Marketing) */
+.project-card:nth-child(1) .project-overlay p {
+    margin-bottom: 1.5rem;  /* Jarak yang lebih besar karena teks lebih panjang */
+}
+
+/* Pengaturan khusus untuk kotak kedua (UI/UX Design) */
+.project-card:nth-child(2) .project-overlay p {
+    margin-bottom: 1.5rem;  /* Jarak sedang karena teks sedang */
+}
+
+/* Pengaturan khusus untuk kotak ketiga (Web Design) */
+.project-card:nth-child(3) .project-overlay p {
+    margin-bottom: 1.4rem;  /* Jarak yang lebih besar untuk menyeimbangkan */
+}
+
+
+/* Blog Section */
+.blogs {
+    padding: 5rem 5%;
+    background-color: #2C4140;  /* Mengubah warna background ke #2C4140 */
+    color: var(--white-color);
+}
+
+.blogs h2 {
+    font-family: 'Rufina', serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+    text-align: center;  /* Menambahkan properti untuk mengatur teks ke tengah */
+}
+
+.latest-title h3 {
+    font-family: 'Rufina', serif;  /* Mengubah font menjadi Rufina */
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--beige-color);
+    opacity: 0.3;
+    margin-bottom: 3rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+    min-height: 800px;
+}
+
+.blog-post {
+    position: relative;
+    padding: 2rem;
+    height: 100%;
+}
+
+/* Menggunakan pseudo-elements untuk garis vertikal yang lebih tebal */
+.blog-grid::before,
+.blog-grid::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px; /* Mengubah ketebalan garis dari 1px menjadi 2px */
+    background-color: rgba(255, 255, 255, 0.15); /* Meningkatkan opacity untuk garis yang lebih terlihat */
+    height: 100%;
+}
+
+.blog-grid::before {
+    left: 33.33%;
+}
+
+.blog-grid::after {
+    left: 66.66%;
+}
+
+.blog-post.featured {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.blog-post.featured img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50% 0 0 50%;
+    margin: 2rem 0;
+    transition: transform 0.5s ease;  /* Memperlambat transisi untuk efek lebih halus */
+    transform-origin: center;  /* Mengatur titik pusat transformasi */
+}
+
+.blog-post.featured:hover img {
+    transform: scale(1.1);  /* Memperbesar gambar saat hover */
+}
+
+.blog-post h4 {
+    font-family: 'Sen', sans-serif;
+    font-size: 2rem;  /* Memperbesar ukuran judul */
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    margin-top: 1rem;  /* Menambah jarak dari atas */
+}
+
+.post-number {
+    font-family: 'Sen', sans-serif;
+    font-size: 5rem;  /* Memperbesar ukuran nomor */
+    font-weight: 800;
+    color: var(--beige-color);
+    opacity: 0.3;
+    display: block;
+    margin-bottom: 0.5rem;  /* Mengurangi jarak ke bawah */
+}
+
+.post-date {
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    color: var(--beige-color);
+    margin-bottom: 1.5rem;  /* Menambah jarak ke bawah */
+}
+
+.blog-post h4 {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+
+.read-article {
+    display: inline-flex;
+    align-items: center;
+    color: var(--white-color);
+    text-decoration: none;
+    font-family: 'Sen', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 1rem 1.8rem;
+    background-color: #2D4444;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.read-article::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--white-color);
+    transform: scaleX(0.3);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.read-article::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 0;
+    background-color: var(--white-color);
+    transition: height 0.3s ease;
+}
+
+.read-article:hover::after {
+    transform: scaleX(1);
+}
+
+.read-article:hover::before {
+    height: 100%;
+}
+
+/* Responsive Design untuk Blog Section */
+@media (max-width: 1200px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-post.featured {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .blogs h2 {
+        font-size: 2.5rem;
+    }
+
+    .latest-title h3 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 5%;
+    background-color: var(--background-color);
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-family: 'Sen', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    background-color: #2D4444;
+    color: var(--white-color);
+    border-radius: 8px;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+}
+
+.form-input::placeholder {
+    color: var(--white-color);
+    opacity: 0.8;
+}
+
+.form-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border: none;
+    background-color: #2D4444;
+    color: var(--white-color);
+    border-radius: 8px;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    resize: none;
+}
+
+.form-textarea::placeholder {
+    color: var(--white-color);
+    opacity: 0.8;
+}
+
+.send-message {
+    align-self: flex-end;
+    padding: 0.8rem 2rem;
+    background-color: #2D4444;
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.send-message:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design untuk Contact Section */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+}
+/* Decoration Icons */
+.learning-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.decoration-icon {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.top-right {
+    top: -15px;
+    right: -15px;
+}
+
+.decoration-icon img {
+    width: 80px;
+    height: 80px;
+    transform: rotate(15deg);
+}
+
+/* Animasi untuk ikon dekoratif */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(15deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(20deg);
+    }
+    100% {
+        transform: translateY(0) rotate(15deg);
     }
 }

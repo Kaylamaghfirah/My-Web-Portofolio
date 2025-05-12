@@ -1,0 +1,919 @@
+:root {
+    --primary-color: #435B66;    /* Warna hijau tua */
+    --accent-color: #00B8A9;     /* Warna turquoise */
+    --white-color: #FFFFFF;      
+    --dark-color: #042826;       /* Warna hijau gelap */
+    --gray-color: #D9D9D9;       
+    --black-color: #000000;      
+    --beige-color: #B4B4B4;
+    --background-color: #F5F5F5; /* Warna background abu-abu muda */      
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Sen', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--background-color);
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+    color: var(--accent-color);
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5%;
+    min-height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    margin-bottom: 0;  /* Menghilangkan margin bawah */
+    line-height: 1;  /* Mengurangi jarak antar baris */
+}
+
+.hero-content h2 {
+    font-family: 'Sen', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    color: var(--dark-color);
+    margin-bottom: 0.3rem;  /* Mengurangi jarak ke bawah */
+    line-height: 1;  /* Mengurangi jarak antar baris */
+}
+
+.hero-content p {
+    font-family: 'Sen', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #2C4140;
+    line-height: 1;  /* Mengurangi jarak antar baris */
+    margin-top: 0;  /* Menghilangkan margin atas */
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+
+/* About Section */
+.about {
+    background-color: #2C4140;
+    padding: 5rem 0;
+    color: var(--white-color);
+    position: relative;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+    position: relative;
+}
+
+.about-image {
+    flex: 0.8;
+    margin-left: -80px;
+    margin-top: 80px;
+}
+
+.about-text {
+    flex: 1.5;
+    position: relative;
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text p {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--white-color);
+    max-width: 95%;
+    letter-spacing: 0.3px;
+    margin-bottom: 2rem;
+}
+
+.see-more {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    border: none;
+    padding: 0.8rem 2rem;  /* Mengubah padding */
+    border-radius: 25px;   /* Menyesuaikan border-radius */
+    font-family: 'Sen', sans-serif;
+    font-weight: 900;      /* Menyesuaikan ketebalan font */
+    font-size: 1rem;       /* Menyesuaikan ukuran font */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: auto;     /* Menggeser tombol ke kanan */
+    margin-right: 1rem;    /* Memberikan sedikit jarak dari tepi */
+}
+
+/* About Section */
+.about-text h2 {
+    font-family: 'Sen', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: left;  /* Mengubah dari center ke left */
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: 0;          /* Mengubah dari 50% ke 0 */
+    transform: none;  /* Menghapus translateX */
+    margin-left: 5%;  /* Menambahkan margin kiri */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #2D4444;
+    padding: 4rem 5% 0;
+    color: var(--white-color);
+    margin-bottom: 0; /* Menambahkan ini */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-title h2 {
+    font-family: 'Sen', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--white-color);
+    text-align: left;  /* Memastikan judul sejajar kiri */
+}
+
+.footer-title .highlight {
+    color: var(--accent-color);  /* Warna aksen untuk kata "Connect" */
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);  /* Membuat garis lebih halus */
+    margin: 1rem 0 2rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;  /* Memperbesar jarak antar ikon */
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.navigation h3 {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+
+.navigation ul {
+    list-style: none;
+    text-align: right;
+}
+
+.navigation ul li {
+    margin-bottom: 0.8rem;
+}
+
+.navigation ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: var(--accent-color);
+}
+
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0;
+    margin-top: 0; /* Menambahkan ini */
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright p {
+    color: #2D4444;
+    font-size: 0.8rem;
+    font-family: 'Sen', sans-serif;
+}
+
+.footer-terms {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-terms a {
+    color: #2D4444;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: 'Sen', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.footer-terms a:hover {
+    color: var(--accent-color);
+}
+
+.divider {
+    color: #2D4444;
+    margin: 0 0.5rem;
+}
+
+/* Responsive Design untuk Footer Bottom */
+@media (max-width: 768px) {
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+.divider {
+    color: #2D4444;
+}
+
+.footer-terms a:hover {
+    color: var(--accent-color);
+}
+
+.divider {
+    color: #2D4444;
+    margin: 0 0.5rem;
+}
+
+/* Responsive Design untuk Footer */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .navigation ul {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-title h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+
+/* About Section */
+.about {
+    background-color: #2C4140;
+    padding: 5rem 0;
+    color: var(--white-color);
+    position: relative;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+    position: relative;
+}
+
+.about-image {
+    flex: 0.8;
+    margin-left: -80px;
+    margin-top: 80px;
+}
+
+.about-text {
+    flex: 1.5;
+    position: relative;
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text p {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--white-color);
+    max-width: 95%;
+    letter-spacing: 0.3px;
+    margin-bottom: 2rem;
+}
+
+.see-more {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    border: none;
+    padding: 0.8rem 2rem;  /* Mengubah padding */
+    border-radius: 25px;   /* Menyesuaikan border-radius */
+    font-family: 'Sen', sans-serif;
+    font-weight: 900;      /* Menyesuaikan ketebalan font */
+    font-size: 1rem;       /* Menyesuaikan ukuran font */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: auto;     /* Menggeser tombol ke kanan */
+    margin-right: 1rem;    /* Memberikan sedikit jarak dari tepi */
+}
+
+/* About Section */
+.about-text h2 {
+    font-family: 'Sen', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: left;  /* Mengubah dari center ke left */
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: 0;          /* Mengubah dari 50% ke 0 */
+    transform: none;  /* Menghapus translateX */
+    margin-left: 5%;  /* Menambahkan margin kiri */
+}
+
+/* Projects Section */
+.projects {
+    padding: 5rem 5%;  /* Menambahkan padding yang sama dengan section lain */
+    background-color: var(--background-color);
+}
+
+.projects h2 {
+    font-family: 'Sen', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin-bottom: 4rem;
+    text-align: center; 
+}
+
+.projects-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 5%;  /* Menambahkan padding internal */
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;  /* Memperbesar jarak antar card */
+}
+
+.project-card {
+    flex: 0 1 450px;  /* Memperbesar ukuran card */
+    height: 280px;    /* Memperbesar tinggi card */
+    background-color: var(--white-color);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 6px solid #2C4140;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, 
+        rgba(51, 75, 53, 0.85), 
+        rgba(237, 242, 242, 0.85)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-overlay h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    line-height: 1;  /* Ini mengatur jarak antar baris untuk judul */
+    width: 100%;
+}
+
+.project-overlay p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 1 rem;  /* Mengubah dari auto ke nilai tetap */
+    width: 100%;
+}
+
+.project-icon {
+    width: 25px;  /* Mengubah ukuran menjadi lebih besar dan sama */
+    height: 25px; /* Mengubah ukuran menjadi lebih besar dan sama */
+    background-color: #2C4140;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 12px;  /* Menambah padding untuk memastikan icon tetap proporsional */
+}
+
+.project-icon i {
+    color: var(--white-color);  /* Mengubah warna icon menjadi putih agar kontras */
+    font-size: 1.2rem;
+}
+
+.project-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design untuk Projects Section */
+@media (max-width: 968px) {
+    .projects {
+        padding: 3rem 5%;  /* Menyesuaikan padding di layar kecil */
+    }
+    
+    .projects h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-card {
+        flex: 0 1 400px;  /* Menyesuaikan ukuran card di layar kecil */
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;  /* Mengubah layout menjadi vertikal di mobile */
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;  /* Card mengambil lebar penuh di mobile */
+        max-width: 500px;
+    }
+}
+
+
+/* Pengaturan khusus untuk kotak pertama (Digital Marketing) */
+.project-card:nth-child(1) .project-overlay p {
+    margin-bottom: 1.5rem;  /* Jarak yang lebih besar karena teks lebih panjang */
+}
+
+/* Pengaturan khusus untuk kotak kedua (UI/UX Design) */
+.project-card:nth-child(2) .project-overlay p {
+    margin-bottom: 1.5rem;  /* Jarak sedang karena teks sedang */
+}
+
+/* Pengaturan khusus untuk kotak ketiga (Web Design) */
+.project-card:nth-child(3) .project-overlay p {
+    margin-bottom: 1.4rem;  /* Jarak yang lebih besar untuk menyeimbangkan */
+}
+
+
+/* Blog Section */
+.blogs {
+    padding: 5rem 5%;
+    background-color: #2C4140;  /* Mengubah warna background ke #2C4140 */
+    color: var(--white-color);
+}
+
+.blogs h2 {
+    font-family: 'Rufina', serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+    text-align: center;  /* Menambahkan properti untuk mengatur teks ke tengah */
+}
+
+.latest-title h3 {
+    font-family: 'Rufina', serif;  /* Mengubah font menjadi Rufina */
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--beige-color);
+    opacity: 0.3;
+    margin-bottom: 3rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+    min-height: 800px;
+}
+
+.blog-post {
+    position: relative;
+    padding: 2rem;
+    height: 100%;
+}
+
+/* Menggunakan pseudo-elements untuk garis vertikal yang lebih tebal */
+.blog-grid::before,
+.blog-grid::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px; /* Mengubah ketebalan garis dari 1px menjadi 2px */
+    background-color: rgba(255, 255, 255, 0.15); /* Meningkatkan opacity untuk garis yang lebih terlihat */
+    height: 100%;
+}
+
+.blog-grid::before {
+    left: 33.33%;
+}
+
+.blog-grid::after {
+    left: 66.66%;
+}
+
+.blog-post.featured {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.blog-post.featured img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50% 0 0 50%;
+    margin: 2rem 0;
+    transition: transform 0.5s ease;  /* Memperlambat transisi untuk efek lebih halus */
+    transform-origin: center;  /* Mengatur titik pusat transformasi */
+}
+
+.blog-post.featured:hover img {
+    transform: scale(1.1);  /* Memperbesar gambar saat hover */
+}
+
+.blog-post h4 {
+    font-family: 'Sen', sans-serif;
+    font-size: 2rem;  /* Memperbesar ukuran judul */
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    margin-top: 1rem;  /* Menambah jarak dari atas */
+}
+
+.post-number {
+    font-family: 'Sen', sans-serif;
+    font-size: 5rem;  /* Memperbesar ukuran nomor */
+    font-weight: 800;
+    color: var(--beige-color);
+    opacity: 0.3;
+    display: block;
+    margin-bottom: 0.5rem;  /* Mengurangi jarak ke bawah */
+}
+
+.post-date {
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    color: var(--beige-color);
+    margin-bottom: 1.5rem;  /* Menambah jarak ke bawah */
+}
+
+.blog-post h4 {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+
+.read-article {
+    display: inline-flex;
+    align-items: center;
+    color: var(--white-color);
+    text-decoration: none;
+    font-family: 'Sen', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 1rem 1.8rem;
+    background-color: #2D4444;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.read-article::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--white-color);
+    transform: scaleX(0.3);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.read-article::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 0;
+    background-color: var(--white-color);
+    transition: height 0.3s ease;
+}
+
+.read-article:hover::after {
+    transform: scaleX(1);
+}
+
+.read-article:hover::before {
+    height: 100%;
+}
+
+/* Responsive Design untuk Blog Section */
+@media (max-width: 1200px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-post.featured {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .blogs h2 {
+        font-size: 2.5rem;
+    }
+
+    .latest-title h3 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 5%;
+    background-color: var(--background-color);
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-family: 'Sen', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    background-color: #2D4444;
+    color: var(--white-color);
+    border-radius: 8px;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+}
+
+.form-input::placeholder {
+    color: var(--white-color);
+    opacity: 0.8;
+}
+
+.form-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border: none;
+    background-color: #2D4444;
+    color: var(--white-color);
+    border-radius: 8px;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    resize: none;
+}
+
+.form-textarea::placeholder {
+    color: var(--white-color);
+    opacity: 0.8;
+}
+
+.send-message {
+    align-self: flex-end;
+    padding: 0.8rem 2rem;
+    background-color: #2D4444;
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.send-message:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design untuk Contact Section */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+}

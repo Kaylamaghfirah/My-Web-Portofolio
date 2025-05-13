@@ -1,0 +1,280 @@
+/* Contact Page Styles */
+body {
+    background-color: #EDEDED;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sen', sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #f5f5f5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.contact-text {
+    font-family: 'Rufina', serif;
+    font-size: 2rem;
+    color: #13A099;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2C4140;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #13A099;
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #2C4140;
+    border-radius: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #13A099;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #13A099;
+    color: #FFFFFF;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0F8A84;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-container {
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-text {
+        font-size: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem;
+    }
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #2C4140;
+    padding: 0.3rem 1%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    margin-bottom: 1rem;
+}
+
+.footer-title h2 {
+    font-family: 'Sen', sans-serif;
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin: 0;
+}
+.footer-title h2 span:first-child {
+    font-weight: bold;  /* Membuat "Lets" menjadi bold */
+}
+
+.highlight {
+    color: #13A099;
+    font-weight: normal;
+}
+
+.footer-title h2 span:last-child {
+    font-weight: bold;  
+}
+
+.footer-line {
+    width: 100%;
+    height: 5px;
+    background-color: rgba(226, 231, 216, 0.859);
+    margin-top: 0.5rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-top: 0.8rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.social-icon img {
+    width: 45px;
+    height: 45px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover img {
+    opacity: 1;
+}
+
+.navigation {
+    margin-right: 2rem;
+}
+
+.navigation h3 {
+    color: #13A099;
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    margin-bottom: 0.3rem;
+}
+
+.navigation ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    opacity: 1;
+    color: #13A099;
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+    background-color: #D9D9D9;
+    padding: 0.3rem 5%;
+}
+
+.footer-bottom-content {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.copyright {
+    color: #617b19;
+    opacity: 0.8;
+}
+
+.footer-terms {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.footer-terms a {
+    color: #2C4140;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-terms a:hover {
+    opacity: 1;
+}
+
+.divider {
+    color: #2C4140;
+    opacity: 0.5;
+}

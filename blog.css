@@ -305,10 +305,10 @@
 
 .blog-header-image {
     flex: 1;
-    border-radius: 150px 150px 150px 150px;
+    border-radius: 50px 50px 50px 50px;  /* Mengubah border-radius untuk membuat bentuk kapsul horizontal */
     overflow: hidden;
-    max-width: 400px;
-    height: 600px;
+    max-width: 600px;  /* Memperlebar maksimum width */
+    height: 300px;    /* Mengurangi height untuk aspek rasio landscape */
     position: relative;
 }
 
@@ -320,12 +320,108 @@
 }
 
 .blog-detail-header {
-    background-color: #F5F5F5;
-    padding: 2rem 5%;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    position: relative;
+    /* Blog Post Layout */
+    .blog-post {
+        background-color: #F5F5F5;
+        padding: 2rem 5%;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .blog-post-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .blog-post-flex {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+    
+    .blog-post-image {
+        flex: 1;
+        max-width: 50%;
+        height: 400px;
+        overflow: hidden;
+    }
+    
+    .left-curve {
+        border-radius: 0 200px 200px 0;
+    }
+    
+    .blog-post-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .blog-post-content {
+        flex: 1;
+    }
+    
+    .blog-post-title {
+        font-family: 'Sen', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #2C4140;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+    
+    .blog-post-meta {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .author, .date {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .author img, .date img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .author span, .date span {
+        font-family: 'Sen', sans-serif;
+        color: #666666;
+        font-size: 1rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 992px) {
+        .blog-post-flex {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    
+        .blog-post-image {
+            max-width: 100%;
+            height: 300px;
+        }
+    
+        .blog-post-title {
+            font-size: 2rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .blog-post-title {
+            font-size: 1.5rem;
+        }
+    
+        .blog-post-meta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+    }
 }
 
 .blog-detail-title {

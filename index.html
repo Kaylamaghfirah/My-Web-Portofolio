@@ -42,7 +42,7 @@
             <div class="about-text">
                 <h2>About <span class="highlight">Me</span></h2>
                 <p>Hey there, I'm Kayla Maghfirah! I'm a Digital Business student currently learning UI/UX design, digital marketing, and content writing. I love exploring new things, gaining fresh experiences, and continuously improving my skills.Right now, I'm in the process of developing my expertise in these fields to create meaningful and impactful digital experiences. Feel free to explore my work and see what I've been working on!</p>
-                <button class="see-more">See More</button>
+                <a href="about.html" class="see-more">See More</a>
             </div>
         </div>
     </section>
@@ -97,7 +97,7 @@
                 <p class="post-date">January 18, 2025</p>
                 <h4>Spending My Free Time Learning to Decorate</h4>
                 <img src="assets/blog1.png" alt="Decorating Blog">
-                <a href="#" class="read-article">READ ARTICLE</a>
+                <a href="blog-detail.html" class="read-article">READ ARTICLE</a>
             </div>
     
             <!-- Blog Post 2 -->
@@ -105,7 +105,7 @@
                 <span class="post-number">02</span>
                 <p class="post-date">December 21, 2024</p>
                 <h4>Exploring Vulnerability, Safe Space and Immobility Through 'Kiri Depan, Daeng!' Book Tour</h4>
-                <a href="#" class="read-article">READ ARTICLE</a>
+                <a href="blog-book tour-detail.html" class="read-article">READ ARTICLE</a>
             </div>
     
             <!-- Blog Post 3 -->
@@ -113,7 +113,7 @@
                 <span class="post-number">03</span>
                 <p class="post-date">August 9, 2024</p>
                 <h4>Taking My First Yoga Class Was One of the Best Decisions I Made</h4>
-                <a href="#" class="read-article">READ ARTICLE</a>
+                <a href="blog-yoga-detail.html" class="read-article">READ ARTICLE</a>
             </div>
     
             <!-- Blog Post 4 -->
@@ -121,7 +121,7 @@
                 <span class="post-number">04</span>
                 <p class="post-date">August 9, 2024</p>
                 <h4>Taking My First Yoga Class Was One of the Best Decisions I Madt</h4>
-                <a href="#" class="read-article">READ ARTICLE</a>
+                <a href="blog-yoga-detail.html" class="read-article">READ ARTICLE</a>
             </div>
     
             <!-- Blog Post 5 -->
@@ -129,23 +129,33 @@
                 <span class="post-number">05</span>
                 <p class="post-date">December 21, 2024</p>
                 <h4>Exploring Vulnerability, Safe Space and Immobility Through 'Kiri Depan, Daeng!' Book Tour</h4>
-                <a href="#" class="read-article">READ ARTICLE</a>
+                <a href="blog-book tour-detail.html" class="read-article">READ ARTICLE</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact">
-        <div class="contact-container">
-            <h2>Contact <span class="highlight">Me!</span></h2>
-            <div class="contact-form">
-                <div class="form-row">
-                    <input type="text" placeholder="Name" class="form-input">
-                    <input type="email" placeholder="Email Address" class="form-input">
+        <h2>Contact <span class="highlight">Me!</span></h2>
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required>
                 </div>
-                <textarea placeholder="Your Message" class="form-textarea"></textarea>
-                <button class="send-message">Send Message</button>
-            </div>
+        
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Write a Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+        
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
         </div>
     </section>
 
@@ -159,13 +169,13 @@
             
             <div class="footer-links">
                 <div class="social-links">
-                    <a href="#" class="social-icon">
+                    <a href="https://www.instagram.com/kelaahm/?igsh=djd1YWZmbThpMWhn#" class="social-icon">
                         <img src="assets/instagram.png" alt="Instagram">
                     </a>
-                    <a href="#" class="social-icon">
+                    <a href="https://t.me/+6287898380512" class="social-icon">
                         <img src="assets/telegram.png" alt="Telegram">
                     </a>
-                    <a href="#" class="social-icon">
+                    <a href="https://www.linkedin.com/in/kayla-maghfirah-4263b2280/" class="social-icon">
                         <img src="assets/linkedin.png" alt="LinkedIn">
                     </a>
                     <a href="#" class="social-icon">
@@ -176,11 +186,11 @@
                 <div class="navigation">
                     <h3>Navigation</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>

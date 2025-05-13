@@ -1,14 +1,20 @@
+/* Mengimpor font yang dibutuhkan */
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+
+/* Variabel warna */
 :root {
-    --primary-color: #435B66;    /* Warna hijau tua */
-    --accent-color: #00B8A9;     /* Warna turquoise */
+    --primary-color: #435B66;    
+    --accent-color: #00B8A9;     
     --white-color: #FFFFFF;      
-    --dark-color: #042826;       /* Warna hijau gelap */
+    --dark-color: #042826;       
     --gray-color: #D9D9D9;       
     --black-color: #000000;      
     --beige-color: #B4B4B4;
-    --background-color: #F5F5F5; /* Warna background abu-abu muda */      
+    --background-color: #F5F5F5;      
 }
 
+/* Reset dan pengaturan dasar */
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +30,7 @@ body {
     flex-direction: column;
 }
 
-/* Navigation */
+/* Navigasi */
 nav {
     display: flex;
     justify-content: space-between;
@@ -36,13 +42,6 @@ nav {
 .logo img {
     height: 70px;
     width: auto;
-}
-
-.logo-text {
-    font-family: 'Rufina', serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #13A099;
 }
 
 .nav-links {
@@ -63,7 +62,7 @@ nav {
     color: var(--accent-color);
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -81,8 +80,8 @@ nav {
     font-weight: 700;
     font-size: 2.5rem;
     color: var(--dark-color);
-    margin-bottom: 0;  /* Menghilangkan margin bawah */
-    line-height: 1;  /* Mengurangi jarak antar baris */
+    margin-bottom: 0;
+    line-height: 1;
 }
 
 .hero-content h2 {
@@ -90,8 +89,8 @@ nav {
     font-weight: 800;
     font-size: 4rem;
     color: var(--dark-color);
-    margin-bottom: 0.3rem;  /* Mengurangi jarak ke bawah */
-    line-height: 1;  /* Mengurangi jarak antar baris */
+    margin-bottom: 0.3rem;
+    line-height: 1;
 }
 
 .hero-content p {
@@ -99,130 +98,46 @@ nav {
     font-weight: 900;
     font-size: 1.2rem;
     color: #2C4140;
-    line-height: 1;  /* Mengurangi jarak antar baris */
-    margin-top: 0;  /* Menghilangkan margin atas */
+    line-height: 1;
+    margin-top: 0;
 }
 
 .highlight {
     color: var(--accent-color);
 }
 
-
-/* Responsive Design */
-@media (max-width: 968px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 3rem;
-    }
-
-    .hero-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .hero-image img {
-        width: 300px;
-        height: 300px;
-    }
+/* Contact Section */
+.contact {
+    background-color: #F5F5F5;  /* Mengubah background contact menjadi terang */
+    padding: 4rem 5%;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-}
-
-
-/* About Section */
-.about {
-    background-color: #2C4140;
-    padding: 5rem 0;
-    color: var(--white-color);
-    position: relative;
-}
-
-.about-container {
+.contact-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 5%;
-    display: flex;
-    align-items: flex-start;
-    gap: 8rem;
-    position: relative;
 }
 
-.about-image {
-    flex: 0.8;
-    margin-left: -80px;
-    margin-top: 80px;
-}
-
-.about-text {
-    flex: 1.5;
-    position: relative;
-    padding-top: 12rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.about-text p {
+.contact h2 {
     font-family: 'Sen', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.8;
-    color: var(--white-color);
-    max-width: 95%;
-    letter-spacing: 0.3px;
-    margin-bottom: 2rem;
-}
-
-.see-more {
-    background-color: var(--white-color);
-    color: var(--dark-color);
-    border: none;
-    padding: 0.8rem 2rem;  /* Mengubah padding */
-    border-radius: 25px;   /* Menyesuaikan border-radius */
-    font-family: 'Sen', sans-serif;
-    font-weight: 900;      /* Menyesuaikan ketebalan font */
-    font-size: 1rem;       /* Menyesuaikan ukuran font */
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-left: auto;     /* Menggeser tombol ke kanan */
-    margin-right: 1rem;    /* Memberikan sedikit jarak dari tepi */
-}
-
-/* About Section */
-.about-text h2 {
-    font-family: 'Sen', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    text-align: left;  /* Mengubah dari center ke left */
-    width: 100%;
-    position: absolute;
-    top: -20px;
-    left: 0;          /* Mengubah dari 50% ke 0 */
-    transform: none;  /* Menghapus translateX */
-    margin-left: 5%;  /* Menambahkan margin kiri */
+    color: #2C4140;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-/* Footer Section */
+.contact .highlight {
+    color: var(--accent-color);
+}
+
+/* Footer tetap dengan warna yang sama */
 .footer {
-    background-color: #2D4444;
+    background-color: #2C4140;
     padding: 4rem 5% 0;
     color: var(--white-color);
     margin-bottom: 0;
     position: relative;
     margin-top: 2rem;
-}
-
-.footer::before {
-    content: '';
-    position: absolute;
-    top: -2rem;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.);
 }
 
 .footer-content {
@@ -236,17 +151,18 @@ nav {
     font-weight: 800;
     margin-bottom: 1rem;
     color: var(--white-color);
-    text-align: left;  /* Memastikan judul sejajar kiri */
+    text-align: left;
 }
 
 .footer-title .highlight {
-    color: var(--accent-color);  /* Warna aksen untuk kata "Connect" */
+    color: var(--accent-color);
+    font-weight: normal;
 }
 
 .footer-line {
     width: 100%;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.2);  /* Membuat garis lebih halus */
+    background-color: rgba(255, 255, 255, 0.2);
     margin: 1rem 0 2rem;
 }
 
@@ -259,7 +175,7 @@ nav {
 
 .social-links {
     display: flex;
-    gap: 1.5rem;  /* Memperbesar jarak antar ikon */
+    gap: 1.5rem;
 }
 
 .social-icon {
@@ -312,14 +228,12 @@ nav {
     color: var(--accent-color);
 }
 
-
-/* Footer Bottom Section */
+/* Footer Bottom */
 .footer-bottom {
     background-color: #D9D9D9;
     width: 100%;
     padding: 1rem 0;
     margin: 0;
-    margin-top: 0; /* Menambahkan ini */
 }
 
 .footer-bottom-content {
@@ -332,7 +246,7 @@ nav {
 }
 
 .copyright p {
-    color: #2D4444;
+    color: #2C4140;
     font-size: 0.8rem;
     font-family: 'Sen', sans-serif;
 }
@@ -344,7 +258,7 @@ nav {
 }
 
 .footer-terms a {
-    color: #2D4444;
+    color: #2C4140;
     text-decoration: none;
     font-size: 0.8rem;
     font-family: 'Sen', sans-serif;
@@ -356,34 +270,33 @@ nav {
 }
 
 .divider {
-    color: #2D4444;
+    color: #2C4140;
     margin: 0 0.5rem;
 }
 
-/* Responsive Design untuk Footer Bottom */
-@media (max-width: 768px) {
-    .footer-bottom-content {
+/* Responsive Design */
+@media (max-width: 968px) {
+    .hero {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
+        gap: 3rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image img {
+        width: 300px;
+        height: 300px;
     }
 }
 
-.divider {
-    color: #2D4444;
-}
-
-.footer-terms a:hover {
-    color: var(--accent-color);
-}
-
-.divider {
-    color: #2D4444;
-    margin: 0 0.5rem;
-}
-
-/* Responsive Design untuk Footer */
 @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
     .footer-links {
         flex-direction: column;
         align-items: center;
@@ -394,7 +307,7 @@ nav {
         text-align: center;
     }
 
-    .footer-bottom {
+    .footer-bottom-content {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
@@ -406,8 +319,61 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
+/* Contact Form Styles */
+.contact-form-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #2C4140;
+    border-radius: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #13A099;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #13A099;
+    color: #FFFFFF;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0F8A84;
 }

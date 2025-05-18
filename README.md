@@ -4,4 +4,4 @@ Bagian footer jangan warna gelap semua usahakan ada warna terang agar ada perbed
 Ukuran gambar di blog di perbesar agar sejajar dengan tulisan
 **#Feedback 3 (Pak Hermanto)**
 - Menu navigasi di footer di ubah jadi 1 baris
-- Tambahkan fitur berbagi agar artikel blog bisa dibagikan ke media sosial
+- Tambahkan fitur berbagi agar artikel blog bisa dibagikan ke media sosiall

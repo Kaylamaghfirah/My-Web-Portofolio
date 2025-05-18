@@ -220,8 +220,61 @@ nav {
     background-color: #F5F5F5;
 }
 
+.footer-content.portfolio-detail-footer .footer-title h2 {
+    color: #2C4140;
+}
+
+.footer-content.portfolio-detail-footer .footer-title h2 .highlight {
+    color: #13A099;
+    font-weight: bold;
+}
+
+.footer-content.portfolio-detail-footer .footer-line {
+    background-color: #13A099;
+    opacity: 1;
+    height: 5px;
+    margin-top: 1rem;
+}
+
+.footer-content.portfolio-detail-footer .navigation h3 {
+    color: #13A099;
+}
+
+.footer-content.portfolio-detail-footer .navigation a {
+    color: #2C4140;
+}
+
+.footer-content.portfolio-detail-footer .navigation a:hover {
+    color: #13A099;
+}
+
 .footer-content.about-footer {
     background-color: #F5F5F5;
+}
+
+.footer-content.about-footer .footer-title h2 {
+    color: #2C4140;
+}
+
+.footer-content.about-footer .footer-title h2 .highlight {
+    color: #13A099;
+    font-weight: bold;
+}
+
+.footer-content.about-footer .navigation a {
+    color: #2C4140;  /* Warna teks untuk menu navigasi di footer about */
+    text-decoration: none;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-content.about-footer .navigation a:hover {
+    color: #13A099;  /* Warna hover untuk menu navigasi di footer about */
+}
+
+.footer-content.about-footer .navigation h3 {
+    color: #13A099;  /* Warna untuk judul Navigation di footer about */
 }
 
 .footer-title {
@@ -237,7 +290,7 @@ nav {
 .footer-title h2 {
     font-family: 'Sen', sans-serif;
     font-size: 2rem;
-    color: #FFFFFF;
+    color: #F5F5F5;
     margin: 0;
 }
 
@@ -256,6 +309,11 @@ nav {
     height: 5px;
     background-color: rgba(226, 231, 216, 0.859);
     margin-top: 0.5rem;
+}
+
+.footer-content.about-footer .footer-line {
+    background-color: #1e918b;
+    opacity: 1
 }
 
 .footer-links {
